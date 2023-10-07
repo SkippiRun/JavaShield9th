@@ -8,15 +8,15 @@ class Vehicle {
 		passengers = p;
 		fuelcap = f;
 		mpg = m;
-}
+	}
 
 	int range () {
 	return mpg * fuelcap;
-}
+	}
 
 	double fuelNeeded (double miles) {
 	return (double) miles / mpg;
-}
+	}
 }
 
 class VehConsDemo {
@@ -34,5 +34,5 @@ class VehConsDemo {
 	gallons = sportscar.fuelNeeded(dist);
 	System.out.print("Для поездки на расстояние " + dist + " миль спорткару требуется ");
 	System.out.println(gallons + " галлонов топлива.");
-}
+	}
 }
